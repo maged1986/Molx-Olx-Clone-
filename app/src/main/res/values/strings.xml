@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Molx ForSale</string>
+    <string-array name="spinner">
+        <item>Cars</item>
+        <item>Houses</item>
+        <item>Cell Phones</item>
+        <item>Electronics</item>
+        <item>Furniture</item>
+        <item>Jobs</item>
+    </string-array>
+</resources>

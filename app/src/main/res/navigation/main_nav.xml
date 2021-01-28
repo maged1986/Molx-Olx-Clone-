@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav.xml"
+    app:startDestination="@id/categoriesFragment">
+
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.megednan.molxforsale.ui.frags.CategoriesFragment"
+        android:label="categories_fragment"
+        tools:layout="@layout/categories_fragment">
+        <action
+            android:id="@+id/action_categoriesFragment_to_categoryAdsFragment"
+            app:destination="@id/categoryAdsFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/allAdsFragment"
+        android:name="com.megednan.molxforsale.ui.frags.AllAdsFragment"
+        android:label="all_ads_fragment"
+        tools:layout="@layout/all_ads_fragment">
+        <action
+            android:id="@+id/action_allAdsFragment_to_adDetailsFragment"
+            app:destination="@id/adDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myAdsFragment"
+        android:name="com.megednan.molxforsale.ui.frags.MyAdsFragment"
+        android:label="my_ads_fragment"
+        tools:layout="@layout/my_ads_fragment">
+        <action
+            android:id="@+id/action_myAdsFragment_to_adDetailsFragment"
+            app:destination="@id/adDetailsFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/categoryAdsFragment"
+        android:name="com.megednan.molxforsale.ui.frags.CategoryAdsFragment"
+        android:label="category_ads_fragment"
+        tools:layout="@layout/category_ads_fragment">
+        <action
+            android:id="@+id/action_categoryAdsFragment_to_adDetailsFragment"
+            app:destination="@id/adDetailsFragment" />
+        <argument
+            android:name="category"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.megednan.molxforsale.ui.frags.ProfileFragment"
+        android:label="profile_fragment"
+        tools:layout="@layout/profile_fragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.megednan.molxforsale.ui.frags.SearchFragment"
+        android:label="search_fragment"
+        tools:layout="@layout/search_fragment">
+        <action
+            android:id="@+id/action_searchFragment_to_adDetailsFragment"
+            app:destination="@id/adDetailsFragment" />
+        <argument
+            android:name="searchItem"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/adDetailsFragment"
+        android:name="com.megednan.molxforsale.ui.frags.AdDetailsFragment"
+        android:label="ad_details_fragment"
+        tools:layout="@layout/ad_details_fragment">
+        <argument
+            android:name="adPost"
+            app:argType="com.megednan.molxforsale.models.AdPost" />
+    </fragment>
+    <fragment
+        android:id="@+id/createAdFragment"
+        android:name="com.megednan.molxforsale.ui.frags.CreateAdFragment"
+        android:label="create_ad_fragment"
+        tools:layout="@layout/create_ad_fragment" />
+</navigation>
