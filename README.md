@@ -12,8 +12,16 @@ It is an application built on a fire store database that stores ads with their i
 
 ## Built With
 
- java, daggerhilt, databinding, Firebase DataBase, MVVM, FireStore , 
-Android jetpack , REST Storage Cloud, Material Design
+* java
+*  daggerhilt
+*  databinding
+*  Firebase DataBase
+*  MVVM
+*  FireStore
+* Android jetpack
+* REST Storage Cloud
+* Material Design
+
 ## Authors
 
 Maged Noshy fakhary See also the list of contributors who participated in this project.
